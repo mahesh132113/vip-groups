@@ -1,0 +1,112 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+/* .banner{
+    height: 200px;
+    background-image: url('./asserts/vipgroup.png');
+    background-color: aqua;
+    background-size: 100%;
+    background-repeat: no-repeat;
+} */
+
+/* applying media qurries */
+
+/* @media screen and (max-width:576px){
+    banner{
+        height: 150px;
+        background-image: url('./asserts/vipgroup.png');
+        background-color: aqua;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    
+} */
+
+.modal-body>img{
+    height: 250px;
+    width: 100%;
+ }
+
+
+ .team>img{
+    height: 200px;
+    width: 200px;
+    
+ }
+
+ 
+      /* carousel-items  */
+
+      /* carousel-items start  */
+      .carousel-item>img{
+        height: 80vh;
+        width: 100%;
+      }
+       /* carousel-items end  */
+
+     .section{
+        display: none;
+     }
+
+
+     .section:target{
+        display: block;
+     }
+
+     /* optional smooth scrolling */
+
+      html{
+        scroll-behavior: smooth;
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+       /* carousel-items media quries */
+        /* carousel-items media quries start */
+        @media screen and (max-width:576px){
+            .carousel-item>img{
+            height: 80vh;
+            width: 100%;
+         }
+        }
+         /* carousel-items media quries end */
+
+        /* .btn{
+            border: 2px solid white;
+            border-radius: 10%;
+            padding: 2px;
+            padding-left: 2px;
+            padding-right: 2px;
+            background-color: whitesmoke;
+        }
+
+        .login{
+            width: 00px;
+            border-radius: 10%;
+            padding: 5px;
+            padding-left: 2px;
+            padding-right: 2px;
+            background-color: rgba(120, 120, 232, 0.888);
+        }
+
+     */
+
+
+    
+     
+
+     
+     

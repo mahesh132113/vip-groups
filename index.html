@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-                  
-        
     <title>vipGroups</title>
     <!-- favicon -->
     <link rel="shortcut icon" href="./asserts/vip favicon.jpeg" type="image/x-icon">
     <!-- bootstrap cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- bootstrap icon cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">    <!-- bootstrap icon cdn -->
+   <!-- bootstrap icon cdn -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+   <!-- aos animation link -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- css link -->
      <link rel="stylesheet" href="style.css">
 </head>
@@ -27,7 +27,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" href="#">Home</a>
+                <a class="nav-link active" href="index.html">Home</a>
               </li>
               
               <li class="nav-item">
@@ -40,7 +40,7 @@
                 <a class="nav-link " href="/gallery.html">Gallery</a>
               </li>
 
-              <li class="nav-item"></li>
+              <li class="nav-item">
                 <a class="nav-link " href="/contact.html">Contact</a>
               </li>    
             </ul>
@@ -48,12 +48,12 @@
             <!-- login and call to us button start-->
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 
-              <li class="nav-item"></li>
-                <a class="nav-link " href=""><i class="bi bi-person-circle f-3"></i></a>
+              <li class="nav-item">
+                <a class="nav-link " href="./signin.html"><i class="bi bi-person-circle f-3"></i></a>
               </li>
 
-              <li class="nav-item"></li>
-              <a class=" nav-link btn btn-outline-success">call to us</a>
+              <li class="nav-item">
+              <a class=" nav-link btn btn-success " data-bs-target="#exampleModalToggle" data-bs-toggle="modal">get a quote</a>
             </li>
 
               </ul>
@@ -61,8 +61,413 @@
 
           </nav>
      <!-- header section end -->
+
+     <!-- banner section start -->
+     <img src="./asserts/home.png" alt="" class="img-fluid">
+      <!-- banner section end -->
+
+         <!-- History start -->
+          <!-- <div class="container my-5 ">
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 bg-body-tertiary">
+                <h1>Consequatur eius et magnam</h1>
+                <br><br><br><br>
+                <div>
+                 <h4>Est 1988</h4>
+                  <h2>Our Story</h2>
+                  <p>Inventore aliquam beatae at et id alias. Ipsa dolores amet consequuntur minima quia maxime autem. Quidem id sed ratione. Tenetur provident autem in reiciendis rerum at dolor. Aliquam consectetur laudantium temporibus dicta minus dolor. </p>
+                 <p><i class="bi bi-arrow-bar-right"></i>Ullamco laboris nisi ut aliquip ex ea common</p>
+                 <p><i class="bi bi-arrow-bar-right"></i>Duis aute irure dolor in reprehenderit in</p>
+                <p><i class="bi bi-arrow-bar-right"></i>Ullamco laboris nisi ut aliquip ex ea</p>
+                <p>Vitae autem velit excepturi fugit. Animi ad non. Eligendi et non nesciunt suscipit repellendus porro in quo eveniet. Molestias in maxime doloremque.</p>
+               <br><br>
+               <p>Vitae autem velit excepturi fugit. Animi ad non. Eligendi et non nesciunt suscipit repellendus porro in quo eveniet. Molestias in maxime doloremque.</p>
+               <br><br>
+               <h3><i class="bi bi-play-circle"></i> Watch viedo</h3>
+              </div>
+
+              </div>
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                <img src="./asserts/history.jpg" alt="" class="img-fluid" style="width: 700px; height: 710px;">
+              </div>
+            </div>
+          </div> -->
+
+          <!-- History end-->
+        
+       <!-- stats start -->
+      <div class="container my-3">
+        <div class="container text-center">
+          <h3 class="text-success">STATS</h3>
+          <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="card mx-5 text-center" >
+              <div class="card-body">
+                <i class="bi bi-emoji-smile-fill"></i>
+               <h1>232</h1>
+               <p class="card-text">Happy clients</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="card mx-5 text-center" >
+              <div class="card-body">
+                <i class="bi bi-journal-arrow-up"></i>
+               <h1>521</h1>
+               <p class="card-text">Projects</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="card mx-5 text-center" >
+              <div class="card-body">
+                <i class="bi bi-headset"></i>
+               <h1>1463</h1>
+               <p class="card-text">Hours of Support</p>
+              </div>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+
+       <!-- stats end -->
+
+      <!--features start  -->
+      <div class="container my-5">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6"data-aos="zoom-in-up">
+            <img src="./asserts/features.jpg" alt="" class="img-fluid " style="height: 600px;">
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6"data-aos="zoom-in-up">
+            <h3>Enim quis est voluptatibus aliquid consequatur fugiat</h3>
+            <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi </p>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12"data-aos="zoom-in-up">
+              <div>
+                <i class="bi bi-tv-fill"></i>
+                <h4>Lorem Ipsum</h4>
+                <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12"data-aos="zoom-in-up">
+              <div >
+                <i class="bi bi-joystick"></i>
+                <h4>Nemo Enim </h4>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+              </div>
+
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12"data-aos="zoom-in-up">
+              <div >
+                <i class="bi bi-brightness-high-fill"></i>
+                <h4>Dine Pad</h4>
+                <p>Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit. Sunt aut deserunt minus aut eligendi omnis </p>
+              </div>
+
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12" data-aos="zoom-in-up">
+              <div>
+                <i class="bi bi-brightness-alt-high-fill" ></i>
+                <h4>Tride clov</h4>
+                <p>Est voluptatem labore deleniti quis a delectus et. Saepe dolorem libero sit non aspernatur odit amet. Et eligendi</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          
+        </div>
+      </div>
+       <!--features end  -->
+
+     <!-- feature-section-start -->
+    <div class="container services-sec  ">
+      <div class="row mt-3  ">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+        <h3>When we focus on mutual success, everyone wins</h3>
+        <p>The drive to go above and beyond your construction needs; the collaborative culture that works with you to exceed your project goals; and the capability to leverage innovation to meet emerging trends and keep you at the forefront. This is PCL</p>
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6" data-aos="flip-left">
+          <div class="d-flex">
+          <i class="bi bi-tv me-2 fs-3"></i>
+          <div>
+            <h4>loreum ipsum</h4>
+            <p>the construction that u can trust evertime</p>
+          </div>
+        </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6"data-aos="flip-left">
+          <div class="d-flex">
+          <i class="bi bi-tv me-2 fs-3"></i>
+          <div>
+            <h4>loreum ipsum</h4>
+            <p>the construction that u can trust evertime</p>
+          </div>
+        </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6"data-aos="flip-left">
+          <div class="d-flex">
+ 
+          <i class="bi bi-tv me-2 fs-3"></i>
+          <div >
+            <h4>loreum ipsum</h4>
+            <p>the construction that u can trust evertime</p>
+          </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6"data-aos="flip-left">
+          <div class="d-flex">
+ 
+          <i class="bi bi-tv me-2 fs-3"></i>
+          <div >
+            <h4>loreum ipsum</h4>
+            <p>the construction that u can trust evertime</p>
+          </div>
+          </div>
+        </div>
+
+        
+      </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6"data-aos="flip-left">
+        <img src="./asserts/c5.jpeg" alt="" class="img-fluid" style="height: 300px;">
+      </div>
+
+     
+    </div>
+    </div>
+
+
+      <!--feature-section-end  -->
+
+
+      <!-- construction section start -->
+
+<section class="container construction">
+  <!-- header section start -->
+    <div class="text-center my-3">
+      <h3 class="text-success">Constructions</h3>
+      <p class="fw-bold">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+    </div>
+    <!-- header section end -->
+
+    <!-- content start -->
+     <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="card mb-3 shadow">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./asserts/construction 1.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Eligendi omnis sunt veritatis</h5>
+                <p class="card-text">Fuga in dolorum et iste et culpa. Commodi possimus nesciunt modi voluptatem placeat deleniti adipisci. Cum delectus doloribus non veritatis. Officia temporibus illo magnam. Dolor eos et.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+       <div class="col-sm-12 col-md-6 col-lg-6">
+      <div class="card mb-3 shadow">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./asserts/construction 2.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Eligendi omnis sunt veritatis</h5>
+              <p class="card-text">Fuga in dolorum et iste et culpa. Commodi possimus nesciunt modi voluptatem placeat deleniti adipisci. Cum delectus doloribus non veritatis. Officia temporibus illo magnam. Dolor eos et.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+        </div>
+
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+        <div class="card mb-3 shadow">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./asserts/construction 3.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Eligendi omnis sunt veritatis</h5>
+                <p class="card-text">Fuga in dolorum et iste et culpa. Commodi possimus nesciunt modi voluptatem placeat deleniti adipisci. Cum delectus doloribus non veritatis. Officia temporibus illo magnam. Dolor eos et.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+         <div class="card mb-3">
+        <div class="row g-0 shadow">
+          <div class="col-md-4">
+            <img src="./asserts/construction 4.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Eligendi omnis sunt veritatis</h5>
+              <p class="card-text">Fuga in dolorum et iste et culpa. Commodi possimus nesciunt modi voluptatem placeat deleniti adipisci. Cum delectus doloribus non veritatis. Officia temporibus illo magnam. Dolor eos et.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+
+     <!-- content end -->
+
+</section>
+
+
+
+       <!-- construction section end -->
+
+    
+
+
+
+      <!-- footer section start -->
+    <footer class="container-fluid footer bg-dark text-white p-3 mt-3">
+      <div class="container p-3">
+      <div class="row">
+        <!-- col 1  start-->
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+          <h3 class="text-success">Vip <span style="color: orangered;">Gropus</span></a></h3>
+        <p>Construction conglomerate Larsen & Toubro is committed to building a stronger India. Founded in 1938, the firm and its subsidiaries offer construction and engineering services related to commercial projects</p>
+        <p><i class="bi bi-facebook">&nbsp;</i><i class="bi bi-whatsapp">&nbsp;</i><i class="bi bi-youtube"></i>&nbsp;<i class="bi bi-twitter-x"></i></p>
+        
+       </div>
+        <!-- col 1 end -->
+        <!-- col 2  start-->
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+          <h3>GET TO KNOW US</h3> 
+          <p>about us</p>
+          <p>services</p>
+          <p>terms and conditions</p>
+          <p>our team</p>
+          <p>privacy policy</p>
+        </div>
+        <!-- col 2  end -->
+
+        <!-- col 3 start -->
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+          <h3>our services</h3>
+          <p>general construction</p>
+          <p>property maintainece</p>
+          <p>general design and build</p>
+          <p>project managment</p>
+        </div>
+        <!-- col 3 end-->
+
+         <!--col 4 start  -->
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+          <h3>contact us</h3>
+          <p>
+            <i class="bi bi-geo-alt-fill"></i>
+            <span>oopsite saibaba temple 4th-floor jntu</span>
+          </p>
+          <p>
+            <i class="bi bi-telephone-forward-fill"></i>
+            <span>+91-6304957038</span>
+          </p>
+          <p>
+            <i class="bi bi-envelope"></i>
+            <span>vipGroups@gmail.com</span>
+          </p>
+
+         
+      </div>
+       <!--col 4 end  -->
+
+    </div>
+      </div>
+
+      <!-- footer link start -->
+       <div class="text-center">
+        <p>&copy;2023 TheVasaviGroup. All rights reserved</p>
+       </div>
+      <!-- footer link start -->
+    
+    
+
+</footer>
+
+
+<!-- footer section end -->
+
+
+   <!-- modal-pop start -->
+   <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 text-success" id="exampleModalToggleLabel">VIP<span style="color: orangered;">Groups</span></h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+         <img src="./asserts/model-pop.png" alt="" class="img-fluid model-pop" >
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">getQuote</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+    <div class="modal-dialog ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Details</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- form content start -->
+          <form class="row g-3">
+            <div class="col-md-12">
+              <label for="inputName" class="form-label">FullName</label>
+              <input type="text" class="form-control" id="inputName">
+            </div>
+            <div class="col-md-12">
+              <label for="inputmobile" class="form-label">Mobile</label>
+              <input type="tel" class="form-control" id="inputmobile">
+            </div>
+            <div class="col-md-12">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="1">ReModelling</option>
+                <option value="2">design</option>
+                <option value="3">renovation</option>
+                <option value="4">patch work</option>
+              </select>
+            </div>
+  
+          </form>
+          <!-- form content end -->
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal" >submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- modal-pop end -->
+
+
       <!-- script -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
- 
+     <!-- aos animation script -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+       <!-- script -->
+      <script>
+        AOS.init();
+      </script>
 </body>
 </html>
